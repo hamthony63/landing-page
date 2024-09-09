@@ -11,13 +11,16 @@ body {
 .info, .cta-container, .quote-container{
     flex: 1;
 }
-body, .header, .menu-bar, ul, .cta-container, .hero-container, .info, .footer, .quote-container {
+body, .header, .menu-bar, ul, .cta-container, .call-to-action, .hero-container, .info, .footer, .quote-container {
     display: flex;
 }
-.header {
+.header, .quote-container, .info {
     min-width: fit-content;
 }
 .hero-container {
+    justify-content: space-around;
+}
+.menu-bar {
     justify-content: space-around;
 }
 body, .header{
@@ -26,10 +29,7 @@ body, .header{
 .header, .footer {
     background-color: #1F2937;
 }
-.menu-bar {
-    justify-content: space-around;
-}
-.hero-title, .logo {
+.hero-title, .logo, .cta-main-text {
     color: #F9FAF9;
     font-weight: 900;
 }
@@ -40,17 +40,17 @@ body, .header{
     width: 350px;
     height: 150px;
 }
-.logo {
+.logo, .cta-main-text {
     font-size: 24px;
 }
-.hero-subtext, a, .signup, .footer {
+.hero-subtext, a, .signup, .footer, .cta-subtext {
     color: #E5E7EB;
     font-size: 18px;
 }
-.hero-subtext, a {
+.hero-subtext, a, .cta-subtext {
     font-weight: 300;
 }
-.signup, .call-to-action {
+.signup, .call-to-action{
     background-color: #3882F6;
 }
 button {
@@ -65,9 +65,7 @@ ul {
 a {
     text-decoration: none;
 }
-.info {
-    justify-content: center;
-    align-items: center;
+.info, .call-to-action {
     gap: 32px;
 }
 .img-text {
@@ -88,9 +86,6 @@ a {
 }
 .quote-container {
     background-color: #E5E7EB;
-    justify-content: center;
-    align-items: center;
-    min-width: fit-content;
 }
 .quote {
     font-size: 36px;
@@ -107,14 +102,20 @@ a {
 }
 .footer {
     height: 52px;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
-/* .cta-container {
+.footer, .quote-container, .info, .cta-container {
     justify-content: center;
     align-items: center;
-} */
+}
+.call-to-action {
+    border-radius: 8px;
+    padding: 32px 64px;
+}
+button {
+    border-radius: 10px;
+    border: none;
+}
+.call-to-action button {
+    border: 2px solid white;
+}
+
