@@ -1,75 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Project | Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">
-        <div class="menu-bar">
-            <div class="logo">Header Logo</div>
-            <div class="right-links">
-                <ul>
-                    <li><a href="#">header link one</a></li>
-                    <li><a href="#">header link two</a></li>
-                    <li><a href="#">header link three</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="hero-container">
-            <div class="hero-text-button">
-                <div class="hero-title">This Website is Awesome</div>
-                <div class="hero-subtext">This website has some subtext that goes here under the main title. It's a smaller font
-                    and the color is lower contrast.
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Odin Project | Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="inner-column">
+                <div class="logo">Header Logo</div>
+                <div class="right-links">
+                    <ul>
+                        <li><a href="#">header link one</a></li>
+                        <li><a href="#">header link two</a></li>
+                        <li><a href="#">header link three</a></li>
+                    </ul>
                 </div>
-                <button class="signup">Sign up</button>
             </div>
-            <img class="hero-img" src="" alt="">
-        </div>
-    </div>
-    <div class="info-title">Some random information.</div>
-    <div class="info">
+        </header>
         
-        <div class="img-text">
-            <img src="" alt="">
-            <div class="info-text">This is some subtext under an illustration or image. </div>
-        </div>
-        <div class="img-text">
-            <img src="" alt="">
-            <div class="info-text">This is some subtext under an illustration or image. </div>
-        </div>
-        <div class="img-text">
-            <img src="" alt="">
-            <div class="info-text">This is some subtext under an illustration or image. </div>
-        </div>
-        <div class="img-text">
-            <img src="" alt="">
-            <div class="info-text">This is some subtext under an illustration or image. </div>
-        </div>
-    </div>
-    <div class="quote-container">
-        <div class="quote">
-            <em>This is an inspiring quote, or testimonial from a customer. 
-                Maybe it's just filling up space, or maybe people will actually read it.
-                Who knows? All I Know is that it looks nice.</em>
-                <span class="quote-author">-Thor, God of Thunder</span>
-        </div>
-    </div>
-    <div class="cta-container">
-        <div class="call-to-action">
-            <div class="cta-text">
-                <div class="cta-main-text">Call to action! It's time!</div>
-                <div class="cta-subtext">Sign up for our product by clicking that
-                    button right over there.
+        <main>
+            <div class="section">
+                <div class="inner-column">
+                    <div class="hero">
+                        <div class="group-text">
+                            <div class="hero-title">This Website is Awesome</div>
+                            <div class="subtext">This website has some subtext that goes here under the main title. It's a smaller font
+                                and the color is lower contrast.
+                            </div>
+                            <button class="signup">Sign up</button>
+                        </div>
+                        <picture>
+                            <img class="hero-img" src="" alt="" height="100px" width="300px">
+                        </picture>
+                    </div>                    
                 </div>
             </div>
-            <button class="signup">Sign up</button>
-        </div>
-    </div>
-    <div class="footer">
-        Copyright © Antonio Medina 2001
-    </div>
-</body>
+
+            <div class="section">
+                <div class="inner-column">
+                    <div class="product-grid">
+                        <div class="info-title">Some random information.</div>
+                        <ul class="product-list">
+                            <li class="product">
+                                <div class="product-card">
+                                    <picture>
+                                        <img src="" alt="">
+                                    </picture>
+                                    <div class="product-info">This is some subtext under an illustration or image. </div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="product-card">
+                                    <picture>
+                                        <img src="" alt="">
+                                    </picture>
+                                    <div class="product-info">This is some subtext under an illustration or image. </div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="product-card">
+                                    <picture>
+                                        <img src="" alt="">
+                                    </picture>
+                                    <div class="product-info">This is some subtext under an illustration or image. </div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="product-card">
+                                    <picture>
+                                        <img src="" alt="">
+                                    </picture>
+                                    <div class="product-info">This is some subtext under an illustration or image. </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>       
+            </div>
+
+            <div class="section">
+                <div class="inner-column">
+                    <div class="quote-grid">
+                        <em class="quote">This is an inspiring quote, or testimonial from a customer. 
+                            Maybe it's just filling up space, or maybe people will actually read it.
+                            Who knows? All I Know is that it looks nice.</em>
+                            <span class="quote-author">-Thor, God of Thunder</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="inner-column">
+                    <div class="call-to-action">
+                        <div class="group-text">
+                            <div class="call-action-text">Call to action! It's time!</div>
+                            <div class="subtext">Sign up for our product by clicking that
+                                button right over there.
+                            </div>
+                        </div>
+                        <button class="signup">Sign up</button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            Copyright © Antonio Medina 2001
+        </footer>
+
+    </body>
 </html>
